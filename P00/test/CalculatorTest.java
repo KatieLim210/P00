@@ -20,16 +20,18 @@ public class CalculatorTest {
 		assertEquals (expected, actual);
 
 	}
+	@Test
 	public void testAddB() {
-		int a = 999;
+		int a = 9999;
 		int b = 0;
 		Calculator cal = new Calculator();
 		int actual = cal.add(a, b); 
 			 
-		int expected = 999;
+		int expected = 9999;
 		assertEquals (expected, actual);
 		
 	}
+	@Test
 	public void testAddE() {
 		int a = 99;
 		int b = -1;
@@ -37,7 +39,7 @@ public class CalculatorTest {
 		int actual = cal.add(a, b); 
 			 
 		String expected = "Error";
-		assertnotEquals (expected, actual);
+		assertNotEquals (expected, actual);
 		
 	}
 	
@@ -94,7 +96,7 @@ public class CalculatorTest {
 	}
 	@Test
 	public void testMutlipleB(){
-		int a = 999;
+		int a = 9999;
 		int b = 0;
 			
 		Calculator cal = new Calculator();
@@ -131,8 +133,8 @@ public class CalculatorTest {
 	}
 	@Test
 	public void testDivideB(){
-		int a = 999;
-		int b = 999;
+		int a = 9999;
+		int b = 9999;
 			
 		Calculator cal = new Calculator();
 		int actual = cal.divide(a, b); 
@@ -155,9 +157,9 @@ public class CalculatorTest {
 	}
 	
 
-	@Test
+	/*@Test
 	public void test() {
 		fail("Not yet implemented");
-	}
+	}*/
 
 }
